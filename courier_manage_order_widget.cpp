@@ -116,8 +116,8 @@ void CourierManageOrderWidget::handleTake()
 void CourierManageOrderWidget::handleFinish()
 {
     bool ok;
-    int orderId = orderPairing
-                      ->data(orderPairing->index(ui->tableViewOrderPairing->currentIndex().row(), 0))
+    int orderId = orderSending
+                      ->data(orderSending->index(ui->tableViewOrderSending->currentIndex().row(), 0))
                       .toInt(&ok);
     if (!ok) {
         return;
